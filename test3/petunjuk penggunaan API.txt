@@ -1,0 +1,19 @@
+Petunjuk Penggunaan API
+
+Pastikan django server sudah dijalankan
+
+1. /akun-api/register/
+	Method yang diijinkan : POST
+	Parameter Body key yang wajib dikirim dari client:
+		email,password,username/fullname,city,zipcode,date_joined
+
+2. /akun-api/list/
+	Method yang diijinkan : GET
+	
+	Query parameter yang wajib dikirim dari client untuk menggunakan Filter:
+		filter_by:[email,username,city,zipcode,date_joined] (Pilih salah satu)
+		filter_value:(nilai yang ingin dicari)
+
+	Query parameter yang wajib dikirim dari client untuk menggunakan Sort:
+		filter_by:[email,username,city,zipcode,date_joined] (Pilih salah satu)
+		type_sort:Masukkan "desc" untuk pengurutan secara descending
